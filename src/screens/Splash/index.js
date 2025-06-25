@@ -24,8 +24,8 @@ const Splash = () => {
                 </Text>
             </View>
             <Button title="Sign Up" style={{ marginTop: 24 }} />
-            <Pressable style={{ marginTop: 24 }} hitSlop={20}>
-                <Text style={{ color: colors.blue, textAlign: 'center', fontWeight: 'bold' }}>Sign In</Text>
+            <Pressable hitSlop={20}>
+                <Text style={styles.footerText}>Sign In</Text>
             </Pressable>
         </View>
     );
