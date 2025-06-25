@@ -28,6 +28,13 @@ export const styles = {
         fontWeight: 'bold',
         textDecorationLine: 'underline',
         color: colors.orange,
+    },
+    footerText: {
+        textAlign: 'center',
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: colors.blue,
+        marginTop: 16,
     }
 
 };
