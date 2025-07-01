@@ -17,14 +17,14 @@ export const styles = StyleSheet.create({
 
     inputContainer: {
         borderWidth: 0.8,
-        borderRadius: 8,
+        borderRadius: 10,
         alignItems: "center",
         color: colors.grey,
         flexDirection: "row",
     },
     input: {
 
-        paddingVertical: 26,
+        paddingVertical: 20,
         paddingHorizontal: 16,
         flex: 1,
         //  color: colors.lightGrey,
@@ -32,6 +32,7 @@ export const styles = StyleSheet.create({
     image: {
         height: 24,
         width: 24,
+        marginHorizontal: 16,
     }
 
 });
