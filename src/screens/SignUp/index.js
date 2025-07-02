@@ -7,6 +7,7 @@ import { styles } from "./style";
 import Button from "../../components/Button";
 import { ScrollView } from "react-native";
 import Separator from "../../components/Seperator";
+import GoogleButton from "../../components/GoogleButton";
 
 const SignUp = () => {
     const [checked, setChecked] = useState(false);
@@ -27,6 +28,10 @@ const SignUp = () => {
             </View>
             <Button title="Sign Up" style={{ marginTop: 24, paddingLeft: 20, paddingRight: 20 }} />
             <Separator text="Or Sign Up with" />
+            <View style={{ alignItems: 'center' }}>
+                <GoogleButton />
+
+            </View>
 
         </ScrollView>
     );
