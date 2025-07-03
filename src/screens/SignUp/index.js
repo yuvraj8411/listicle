@@ -30,8 +30,8 @@ const SignUp = () => {
             <Separator text="Or Sign Up with" />
             <View style={{ alignItems: 'center' }}>
                 <GoogleButton />
-
             </View>
+            <Text style={styles.footerText}>Already have an account? <Text style={styles.agreeTextBold}> Sign In</Text></Text>
 
         </ScrollView>
     );
