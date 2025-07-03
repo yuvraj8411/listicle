@@ -16,8 +16,8 @@ export const styles = StyleSheet.create({
     },
 
     inputContainer: {
-        borderWidth: 0.8,
-        borderRadius: 10,
+        borderWidth: 1,
+        borderRadius: 15,
         alignItems: "center",
         color: colors.grey,
         flexDirection: "row",
@@ -27,7 +27,6 @@ export const styles = StyleSheet.create({
         paddingVertical: 20,
         paddingHorizontal: 16,
         flex: 1,
-        //  color: colors.lightGrey,
     },
     image: {
         height: 24,
