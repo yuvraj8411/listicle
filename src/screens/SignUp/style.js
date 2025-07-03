@@ -21,6 +21,15 @@ export const styles = StyleSheet.create({
     agreeTextBold: {
         fontWeight: 'bold',
         color: colors.blue,
+    },
+    footerText: {
+        textAlign: 'center',
+        marginTop: 20,
+        color: colors.blue,
+    },
+    footerTextBold: {
+        fontWeight: 'bold',
+        color: colors.blue,
     }
 
 });      
