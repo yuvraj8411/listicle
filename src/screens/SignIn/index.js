@@ -8,10 +8,14 @@ import GoogleButton from "../../components/GoogleButton";
 import { styles } from "./style";
 
 
-const SignIn = () => {
+const SignIn = ({ navigation }) => {
+    const onBackPress = () => {
+        navigation.goBack();
+    }
+
     return (
         <ScrollView style={styles.container} >
-            <AuthHeader title="Sign In" onBackPress={() => { }} />
+            <AuthHeader title="Sign In" onBackPress={onBackPress} />
             <Input label="E-mail" placeholder="yuvrjbaravkar84@gmail.com" />
             <Input isPassword label="Password" placeholder="********" />
             <Button title="Sign In" style={{ marginTop: 30, paddingLeft: 20, paddingRight: 20 }} />
