@@ -9,11 +9,21 @@ import { ScrollView } from "react-native";
 import Separator from "../../components/Seperator";
 import GoogleButton from "../../components/GoogleButton";
 
-const SignUp = () => {
+const SignUp = ({ navigation }) => {
     const [checked, setChecked] = useState(false);
+    const onSignUpPress = () => {
+        navigation.navigate('SignIn');
+    }
+    const onSignInPress = () => {
+        navigation.navigate('SignIn');
+    }
+    const onBackPress = () => {
+        navigation.goBack();
+    }
+
     return (
         <ScrollView style={styles.container} >
-            <AuthHeader title="Sign Up" onBackPress={() => { }} />
+            <AuthHeader title="Sign Up" onBackPress={onBackPress} />
             <Input label="Name" placeholder="Yuvraj Baravkar" />
             <Input label="Email" placeholder="yuvrajbaravkar84@gmail.com" />
             <Input isPassword label="Password" placeholder="********" />
@@ -26,12 +36,12 @@ const SignUp = () => {
                     <Text style={styles.agreeTextBold}> Privacy</Text>
                 </Text>
             </View>
-            <Button title="Sign Up" style={{ marginTop: 24, paddingLeft: 20, paddingRight: 20 }} />
+            <Button title="Sign Up" style={{ marginTop: 24, paddingLeft: 20, paddingRight: 20 }} onPress={onSignUpPress} />
             <Separator text="Or Sign Up with" />
             <View style={{ alignItems: 'center' }}>
                 <GoogleButton />
             </View>
-            <Text style={styles.footerText}>Already have an account? <Text style={styles.agreeTextBold}> Sign In</Text></Text>
+            <Text style={styles.footerText}>Already have an account? <Text style={styles.agreeTextBold} onPress={onSignInPress}> Sign In</Text></Text>
 
         </ScrollView>
     );
